@@ -19,15 +19,26 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="MKw-nk-n1c" userLabel="Calc VStack">
                                 <rect key="frame" x="0.0" y="47" width="375" height="731"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0  " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC2-i9-XzD" userLabel="0">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5a-6v-3YK">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="120.33333333333333"/>
-                                        <edgeInsets key="layoutMargins" top="12" left="8" bottom="12" right="24"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0  " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC2-i9-XzD" userLabel="0">
+                                                <rect key="frame" x="20" y="0.0" width="335" height="120.33333333333333"/>
+                                                <edgeInsets key="layoutMargins" top="12" left="8" bottom="12" right="24"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gC2-i9-XzD" firstAttribute="top" secondItem="g5a-6v-3YK" secondAttribute="top" id="JLb-oH-DTh"/>
+                                            <constraint firstItem="gC2-i9-XzD" firstAttribute="leading" secondItem="g5a-6v-3YK" secondAttribute="leading" constant="20" id="KeX-kj-9oS"/>
+                                            <constraint firstAttribute="trailing" secondItem="gC2-i9-XzD" secondAttribute="trailing" constant="20" id="T1H-3r-CUL"/>
+                                            <constraint firstAttribute="bottom" secondItem="gC2-i9-XzD" secondAttribute="bottom" id="Ynj-RW-7uL"/>
+                                        </constraints>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="G75-Sr-yLw" userLabel="AC HStack">
-                                        <rect key="frame" x="0.0" y="122.33333333333334" width="375" height="119.99999999999997"/>
+                                        <rect key="frame" x="0.0" y="122.33333333333334" width="375" height="120"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Xg-es-CLv">
                                                 <rect key="frame" x="0.0" y="0.0" width="92.333333333333329" height="120"/>
@@ -64,7 +75,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Sbl-el-pK0" userLabel="789x HStack">
-                                        <rect key="frame" x="0.0" y="244.33333333333334" width="375" height="120.33333333333329"/>
+                                        <rect key="frame" x="0.0" y="244.33333333333334" width="375" height="120.33333333333334"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Te-1e-CoT">
                                                 <rect key="frame" x="0.0" y="0.0" width="92.333333333333329" height="120.33333333333333"/>
